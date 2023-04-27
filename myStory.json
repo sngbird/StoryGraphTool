@@ -1,58 +1,67 @@
 {
-    "Title": "Campus Life on the West Side",
-    "Credits": "Created by Adam Smith (amsmith@ucsc.edu).",
-    "InitialLocation": "Kresge",
+    "Title": "Commute to UCSC from Home!",
+    "Credits": "Story Altered By Lumina Kinsinger-Dang",
+    "InitialLocation": "Home",
     "Locations": {
-        "Kresge": {
-            "Body": "This is Kresge College, lots of nice trees.",
+        "Home": {
+            "Body": "This is my house, it's sort of loud.",
             "Choices": [
                 {
-                    "Text": "South",
-                    "Target": "Porter"
-                }
-            ]
-        },
-        "Porter": {
-            "Body": "This is Porter College, the trees are nice here too.",
-            "Choices": [
-                {
-                    "Text": "North",
-                    "Target": "Kresge"
+                    "Text": "Commute",
+                    "Target": "87"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Rachel Carson"
+                    "Text": "Be Lazy and Stay home",
+                    "Target": "Lazy"
                 }
             ]
         },
-        "Rachel Carson": {
-            "Body": "Rachel Carson College, more sun and fewer trees.",
+        "87": {
+            "Body": "You're not on 87 for long, but people will probably cut you off before your exit.",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Porter"
-                },
-                {
-                    "Text": "South",
-                    "Target": "Oakes"
+                    "Text": "Merge onto 85 North",
+                    "Target": "85N"
                 }
             ]
         },
-        "Oakes": {
-            "Body": "Oakes College, even the buildings have tree bark on them.",
+        "85N": {
+            "Body": "85 North, there's probably a little traffic here.",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Rachel Carson"
+                    "Text": "Merge onto 17 South",
+                    "Target": "87S"
+                }
+    
+            ]
+        },
+        "87S": {
+            "Body": "Time to drive through the mountains, then up High Street to UCSC.",
+            "Choices": [
+                {
+                    "Text": "East Remote Parking Lot",
+                    "Target": "ERC"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Beyond"
+                    "Text": "West Remote Parking Lot",
+                    "Target": "WRC"
                 }
             ]
         },
-        "Beyond": {
-            "Body": "Grass, don't forget to check for ticks!"
+        "ERC": {
+            "Body": "You made it to Campus! There's even parking here."
+        },
+        "WRC": {
+            "Body": "You made it to Campus, but there's no parking here. Looks like you'll have to take a Bus from East Remote",
+            "Choices": [
+                {
+                    "Text": "East Remote Parking Lot",
+                    "Target": "ERC"
+                }
+            ]
+        },
+        "Lazy":{
+            "Body": "You didn't have enough spoons to commute today. You can probably watch the lectures recorded though..."
         }
     }
 }
